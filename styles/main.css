@@ -238,4 +238,161 @@ body.menu-open .container {
     transform: translateX(250px);
 }
 
-/* quando clicado no link do menu o menu
+.headerDesk {
+  display: none;
+}
+
+.sliderDesk {
+  display: none;
+}
+
+@media (min-width : 1024px){
+  body {
+    width: 1250px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  nav.menu-bar {
+      transform: translateX(0px);
+      position: relative;
+      width: 25%;
+      float: left;
+  }
+
+  body.menu-open .container {
+      transform: translateX(0px);
+  }
+
+  .container {
+    width: 75%;
+    float: right;
+  }
+
+  .headerDesk {
+    display: block;
+    margin: 10px 20px;
+  }
+
+  .headerMob {
+    display: none;
+  }
+
+  header {
+    transform: translateX(-25%);
+    width: 1250px;
+    border: 1px solid white;
+  }
+
+  .msglogo {
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Verdana";
+    margin-left: 20px;
+  }
+
+  .itens {
+    margin-top: 15px;
+  }
+
+  .sliderDesk {
+    display: block;
+    border: 1px solid white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .sliderDesk img {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrowLeft {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:50%;
+    height: 100%;
+  }
+
+  .arrowLeft:hover img {
+    content: url('../screen2-desktop-assets/arrow_over.png');
+  }
+
+  .arrowLeft img {
+    width:7%;
+    height: 15%;
+    display: block;
+    position: relative;
+    top: calc(50% - 33px);
+    left: 5%;
+  }
+
+  .arrowRight {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    margin-left: 0px;
+    top: 0;
+    margin-top: 0px;
+    width:50%;
+    height: 100%;
+  }
+
+  .arrowRight:hover img {
+    content: url('../screen2-desktop-assets/arrow_over.png');
+  }
+
+  .arrowRight img {
+    width:7%;
+    height: 15%;
+    float: right;
+    transform: rotate(180deg);
+    display: block;
+    position: relative;
+    top: calc(50% - 33px);
+    right: 5%;
+  }
+
+  .itensSlider {
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 30px);
+  }
+
+  .itemSlider {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 103, 102, 0.5);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .itemSlider.active {
+    background-color: #ff6766;
+  }
+
+  .conteudo {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+
+  .news {
+    width: 46%;
+    float: right;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .buttonFooter {
+    width: 50px;
+    height: 50px;
+  }
+
+}
