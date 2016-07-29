@@ -3,8 +3,8 @@ $(document).ready(function () {
      e.preventDefault();
       $('body').toggleClass('menu-open');
    });
-   $('a#busca').click(function (e) {
+   $('a.busca').click(function (e) {
      e.preventDefault();
-      $('.search').toggle();
+      $('body').toggleClass('search-open');
    });
 });
